@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What If You Could Quit Your Job Without Becoming a "Guru"?</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #ffffff;
+        }
+        
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header-space {
+            height: 20px;
+        }
+        
+        .pre-headline {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #e74c3c;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            background: #fff2f2;
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+        
+        .headline {
+            font-size: 2.8rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            text-align: center;
+            letter-spacing: -1px;
+        }
+        
+        .headline-accent {
+            color: #e74c3c;
+        }
+        
+        .sub-headline {
+            font-size: 1.15rem;
+            color: #27ae60;
+            margin-bottom: 30px;
+            line-height: 1.4;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .story-contrast {
+            background: linear-gradient(135deg, #fef5e7, #fef3e2);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border-left: 5px solid #f39c12;
+        }
+        
+        .old-story {
+            margin-bottom: 20px;
+        }
+        
+        .old-story h3 {
+            color: #e74c3c;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        
+        .old-story p {
+            color: #2c3e50;
+            font-size: 1.0rem;
+            line-height: 1.5;
+        }
+        
+        .new-story h3 {
+            color: #27ae60;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        
+        .new-story p {
+            color: #2c3e50;
+            font-size: 1.0rem;
+            line-height: 1.5;
+        }
+        
+        .opportunity-window {
+            background: #e8f4fd;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border-left: 4px solid #3498db;
+            text-align: center;
+        }
+        
+        .opportunity-window h3 {
+            color: #2980b9;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        
+        .opportunity-window p {
+            color: #2c3e50;
+            font-size: 1.0rem;
+            line-height: 1.5;
+        }
+        
+        .market-stat {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #e74c3c;
+            margin: 10px 0;
+        }
+        
+        .body-copy {
+            font-size: 1.05rem;
+            margin-bottom: 25px;
+            color: #2c3e50;
+            text-align: left;
+        }
+        
+        .body-copy p {
+            margin-bottom: 18px;
+        }
+        
+        .body-copy strong {
+            color: #e74c3c;
+        }
+        
+        .method-teaser {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .method-teaser h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: #f39c12;
+        }
+        
+        .method-teaser .tagline {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #ecf0f1;
+            font-style: italic;
+        }
+        
+        .method-teaser p {
+            font-size: 1.0rem;
+            line-height: 1.6;
+            color: #ecf0f1;
+        }
+        
+        .behind-scenes {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            text-align: center;
+            border: 2px solid #dee2e6;
+        }
+        
+        .behind-scenes h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .behind-scenes p {
+            color: #6c757d;
+            font-size: 1.0rem;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        
+        .waitlist-value {
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .waitlist-value h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .vip-benefits {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        
+        .vip-benefits h4 {
+            color: #f39c12;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            padding: 8px 0;
+        }
+        
+        .benefit-item .check {
+            color: #f39c12;
+            font-weight: bold;
+            margin-right: 12px;
+            font-size: 1.1rem;
+        }
+        
+        .benefit-item span {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+        
+        .urgency-section {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border-left: 4px solid #ffc107;
+            text-align: center;
+        }
+        
+        .urgency-section h4 {
+            color: #856404;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .urgency-section p {
+            color: #856404;
+            font-size: 1.0rem;
+            line-height: 1.4;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            margin: 35px 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 15px 35px rgba(44, 62, 80, 0.3);
+        }
+        
+        .vip-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #e74c3c;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .cta-headline {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+            line-height: 1.3;
+        }
+        
+        .cta-subtext {
+            color: #bdc3c7;
+            font-size: 1.0rem;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 20px 40px;
+            font-size: 1.25rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 20px 0;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(231, 76, 60, 0.5);
+        }
+        
+        .what-happens {
+            margin-top: 15px;
+            padding: 15px;
+            background: rgba(52, 73, 94, 0.3);
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: #bdc3c7;
+            text-align: center;
+            line-height: 1.4;
+        }
+        
+        .honest-disclaimer {
+            font-size: 0.95rem;
+            color: #7f8c8d;
+            margin-top: 30px;
+            text-align: center;
+            line-height: 1.5;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            .headline {
+                font-size: 2.2rem;
+            }
+            .sub-headline {
+                font-size: 1.0rem;
+            }
+            .body-copy {
+                font-size: 1.0rem;
+            }
+            .container {
+                padding: 15px;
+            }
+            .cta-section {
+                padding: 35px 25px;
+            }
+            .method-teaser {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-space"></div>
+        
+        <div class="pre-headline">
+            For Busy People Who Want Freedom—Without the Fake Expert Act
+        </div>
+        
+        <h1 class="headline">
+            What If You Could Quit Your Job Without Becoming a <span class="headline-accent">"Guru"?</span>
+        </h1>
+        
+        <h2 class="sub-headline">
+            The fastest path to freedom is building a business around what you already love
+        </h2>
+        
+        <div class="story-contrast">
+            <div class="old-story">
+                <h3>The old story:</h3>
+                <p>You must become a guru, create a huge following, and grind for years before you see results.</p>
+            </div>
+            
+            <div class="new-story">
+                <h3>The new story:</h3>
+                <p>You can leverage the explosive growth of the digital information industry by connecting people with proven solutions they already want.</p>
+            </div>
+        </div>
+        
+        <div class="opportunity-window">
+            <h3>Why This Opportunity Window Won't Stay Open Forever</h3>
+            <p>The digital education market has grown from <span class="market-stat">$100 billion</span> to over <span class="market-stat">$300 billion</span> in just over a decade, with projections to exceed <span class="market-stat">$500 billion</span> soon.</p>
+            <p><strong>Right now, there's a massive opportunity for regular people to build businesses by connecting others with proven digital solutions—before this space gets oversaturated.</strong></p>
+        </div>
+        
+        <div class="body-copy">
+            <p><strong>But here's what most people don't realize:</strong></p>
+            
+            <p>While everyone else is trying to become the next big guru, you can quietly build income by being the trusted connector in niches you actually care about.</p>
+            
+            <p>You don't create anything. You don't need to be famous. You don't even need to show your face.</p>
+            
+            <p><strong>You simply guide people to digital solutions that genuinely help them—and earn commissions when they find value.</strong></p>
+        </div>
+        
+        <div class="method-teaser">
+            <h3>The "Connect & Collect" Method</h3>
+            <p class="tagline">"You don't have to be the destination. You just build the connection."</p>
+            <p>Instead of being the expert, you become the bridge between experts and the people who need their help. This isn't another course about courses—it's a complete system for busy people who want to build something meaningful.</p>
+        </div>
+        
+        <div class="behind-scenes">
+            <h3>I'm Finalizing This System Right Now</h3>
+            <p>After working one-on-one with nearly 100 people over the past few years, I've identified exactly what works and what doesn't.</p>
+            <p>Now I'm systematizing everything into a complete program—but I'm only accepting a limited number of people into the priority launch group.</p>
+        </div>
+        
+        <div class="waitlist-value">
+            <h3>Get Priority VIP Access</h3>
+            <p>I'm building a small group of serious people who want first access to this system when it launches. This isn't just another email list—it's your VIP pass to everything.</p>
+            
+            <div class="vip-benefits">
+                <h4>🎯 Priority VIP Members Get:</h4>
+                <div class="benefit-item">
+                    <span class="check">✓</span>
+                    <span><strong>First access</strong> when enrollment opens (before the public)</span>
+                </div>
+                <div class="benefit-item">
+                    <span class="check">✓</span>
+                    <span><strong>Exclusive early-bird pricing</strong> (significant savings)</span>
+                </div>
+                <div class="benefit-item">
+                    <span class="check">✓</span>
+                    <span><strong>Bonus training modules</strong> not available elsewhere</span>
+                </div>
+                <div class="benefit-item">
+                    <span class="check">✓</span>
+                    <span><strong>Behind-the-scenes updates</strong> as the system develops</span>
+                </div>
+                <div class="benefit-item">
+                    <span class="check">✓</span>
+                    <span><strong>Private community access</strong> with other serious members</span>
+                </div>
+                <div class="benefit-item">
+                    <span class="check">✓</span>
+                    <span><strong>Additional money-making methods</strong> and resources</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="urgency-section">
+            <h4>⏰ Limited Priority Spots Available</h4>
+            <p>I'm only accepting serious people who are ready to take action. Once we reach capacity for the launch group, the priority list closes and you'll have to wait for public enrollment (at full price).</p>
+        </div>
+        
+        <div class="body-copy">
+            <p><strong>Look, I get it.</strong> You've probably been burned before by empty promises.</p>
+            
+            <p>That's exactly why this is different. No hype. No manufactured scarcity. Just a real opportunity to be part of something that actually works—if you're serious about building a business around topics you care about.</p>
+        </div>
+        
+        <div class="cta-section">
+            <div class="vip-badge">Priority VIP List</div>
+            
+            <h3 class="cta-headline">Secure Your Priority VIP Access</h3>
+            <p class="cta-subtext">Join the exclusive group that gets first access, maximum savings, and bonus resources when the Connect & Collect system launches</p>
+            
+            <button class="cta-button" onclick="joinWaitlist()">
+                Get Priority VIP Access
+            </button>
+            
+            <div class="what-happens">
+                <strong>What happens next:</strong> You'll get immediate access to our private VIP community where I share development updates and exclusive insights. When the system launches, you'll be first in line with the best pricing and exclusive bonuses.
+            </div>
+        </div>
+        
+        <div class="honest-disclaimer">
+            <p><strong>This is for serious people only.</strong> If you're looking for get-rich-quick schemes or magic buttons, this isn't for you. But if you want to build a real business around topics you're passionate about—and you're willing to put in the work—then this priority access could change everything.</p>
+        </div>
+    </div>
+    
+    <script>
+        function joinWaitlist() {
+            window.open('https://icc-d404ff.circle.so/join?invitation_token=8c8667fc5b45772034596b6eb21a7922db3e5439-3d7d510f-a427-4c06-bd7a-57ba6906d777', '_blank');
+        }
+        
+        // Enhanced button interactions
+        const ctaButton = document.querySelector('.cta-button');
+        
+        ctaButton.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-3px) scale(1.02)';
+        });
+        
+        ctaButton.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+        });
+        
+        // Smooth scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -30px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe sections for smooth entrance
+        document.querySelectorAll('.story-contrast, .opportunity-window, .method-teaser, .waitlist-value, .cta-section').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
